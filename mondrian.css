@@ -3,24 +3,44 @@ body {
 	height: 100%;
 	margin: 0;
 	display: flex;
+	background-color:teal;
+
 }
 
 .wide-col {
-	
+	height: 100%;
+	width:75%;
+
 }
 
 .narrow-col {
-	
+	height:100%;
+	width:35%;
+	background-color:pink;
 }
 
+
 .box {
-	
+	height:50%;
+	width:100%;
 }
 
 .blue {background-color: #0D11A8;}
 .red {background-color: #F50F0F;}
 .yellow {background-color: #FAE317;}
 
+@media screen and (max-width: 700px) {
+	body{
+		display: flex;
+	}
+	wide-col{
+		height:75%;
+		width:100%;
+	}
+	narrow-col{
+		height:35%;
+		width:100%;
+}
 
 /* https://philipwalton.github.io/solved-by-flexbox/demos/vertical-centering/ */
 /* If you're using 'display: flex' this class can be used to easily center horizontally! */
