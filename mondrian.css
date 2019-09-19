@@ -34,12 +34,13 @@ body {
 	
 	body{
 		display: block;
-		background-color:snow;
+		
 	}
 	.wide-col{
 		height:75%;
 		width:100%;
 		margin:0;
+		background-color:darkorange;
 	}
 	
 	.box{
@@ -56,13 +57,14 @@ body {
 @media screen and (max-width: 300px) {
 	.body{
 		display:block;
-		background-color:#000000;
+	
 	}
 	
 	.wide-col{
 		height:50%;
 		width:100%;
 		margin:0;
+		background-color:darkgreen
 	} 
 	
 	.box{
