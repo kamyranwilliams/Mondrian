@@ -1,0 +1,96 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	display: flex;
+	background-color:teal;
+
+}
+
+.wide-col {
+	height: 100%;
+	width:75%;
+	display: flex;
+
+}
+
+.narrow-col {
+	height:100%;
+	width:25%;
+	background-color:pink;
+}
+
+
+.box {
+	height:50%;
+	width:100%;
+}
+
+.blue {background-color: #0D11A8;}
+.red {background-color: #F50F0F;}
+.yellow {background-color: #FAE317;}
+
+@media screen and (max-width: 874px) {
+	
+	body{
+		display: block;
+		
+	}
+	.wide-col{
+		height:75%;
+		width:100%;
+		margin:0;
+		background-color:darkorange;
+	}
+	
+	.box{
+	height:100%;
+	width:50%;
+	}
+
+	.narrow-col{
+		height:calc(100%/4);
+		width:100%;
+		display:flex;
+	}
+}/*you got to use inspect to see this change but hah I fixed my code I had put the color change in wbackgroud instead of wide-col*/
+@media screen and (max-width: 300px) {
+	.body{
+		display:block;
+	
+	}
+	
+	.wide-col{
+		height:calc(100%/2);
+		width:100%;
+		margin:0;
+		background-color:darkgreen
+	} 
+	
+	.box{
+	height:50%;
+	width:100%;
+	}
+
+	.narrow-col{
+		height:50%;
+		width:100%;
+		display:block;
+	}
+}
+/* https://philipwalton.github.io/solved-by-flexbox/demos/vertical-centering/ */
+/* If you're using 'display: flex' this class can be used to easily center horizontally! */
+.center-horizontal {
+	align-items: center;	
+}
+
+/* If you're using 'display: flex' this class can be used to easily center vertically! */
+.center-vertical {
+	justify-content: center;
+}
+
+/* Keep your image from overflowing it's parent DIV */
+.contain-image {
+	max-height: 75%;
+	max-width: 75%;
+}
