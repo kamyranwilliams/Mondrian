@@ -49,7 +49,7 @@ body {
 	}
 
 	.narrow-col{
-		height:25%;
+		height:calc(100%/4);
 		width:100%;
 		display:flex;
 	}
@@ -61,7 +61,7 @@ body {
 	}
 	
 	.wide-col{
-		height:50%;
+		height:calc(100%/2);
 		width:100%;
 		margin:0;
 		background-color:darkgreen
